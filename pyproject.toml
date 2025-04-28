@@ -1,0 +1,25 @@
+[project]
+name = "pyright-namespace-issue"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Søren Gregersen", email = "sogr@ambu.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+namespace-package1 = { path = "extern/namespace-package1", develop = true }
+namespace-package2 = { path = "extern/namespace-package2", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+pyright = "1.1.398"
+
+[tool.pyright]
+strict = ["./**"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
