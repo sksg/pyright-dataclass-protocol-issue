@@ -1,5 +1,5 @@
 [project]
-name = "pyright-namespace-issue"
+name = "pyright-dataclass-protocol-issue"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Søren Gregersen", email = "sogr@ambu.com" }]
@@ -10,12 +10,8 @@ requires-python = ">=3.10"
 [tool.poetry]
 package-mode = false
 
-[tool.poetry.dependencies]
-namespace-package1 = { path = "extern/namespace-package1", develop = true }
-namespace-package2 = { path = "extern/namespace-package2", develop = true }
-
 [tool.poetry.group.dev.dependencies]
-pyright = "1.1.398"
+pyright = "^1.1.400"
 
 [tool.pyright]
 strict = ["./**"]
