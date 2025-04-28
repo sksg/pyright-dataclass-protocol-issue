@@ -1,0 +1,17 @@
+[project]
+name = "namespace-package1"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Søren Gregersen", email = "sogr@ambu.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.poetry]
+packages = [{ include = "namespace" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
