@@ -28,11 +28,11 @@ poetry run pyright ./example_script.py
 
 in your shell which in my shell outputs
 
-> c:\Users\sogr\src\pyright-dataclass-protocol-issue\example_script.py
->   c:\Users\sogr\src\pyright-dataclass-protocol-issue\example_script.py:50:16 - error: Cannot instantiate abstract class "dataclass_one_prime"
+> \src\pyright-dataclass-protocol-issue\example_script.py
+>   \src\pyright-dataclass-protocol-issue\example_script.py:50:16 - error: Cannot instantiate abstract class "dataclass_one_prime"
 >     "dataclass_one_protocol.a" is not implemented
 >     "dataclass_one_protocol.b" is not implemented (reportAbstractUsage)
->   c:\Users\sogr\src\pyright-dataclass-protocol-issue\example_script.py:124:27 - error: Cannot instantiate abstract class "combined_dataclass_prime"
+>   \src\pyright-dataclass-protocol-issue\example_script.py:124:27 - error: Cannot instantiate abstract class "combined_dataclass_prime"
 >     "dataclass_two_protocol.x" is not implemented
 >     "dataclass_two_protocol.y" is not implemented
 >     and 2 more... (reportAbstractUsage)
